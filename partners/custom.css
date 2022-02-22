@@ -1,0 +1,126 @@
+.menu {
+  width: 100%;
+  z-index: 99;
+  position: static;
+}
+
+.menu.sticky {
+  position: fixed;
+  top: 0;
+}
+
+/* PAGE STYLING FOR DEMO. IGNORE */
+
+.menu {
+  padding: 0;
+  margin: 0 0 30px;
+  font-size: 1.5em;
+  background: #fff;
+}
+
+.menu-item {
+  border: none;
+  border-bottom: 5px solid #fff;
+  display: inline-block;
+  padding: 5px 0;
+  margin: 0 15px;
+}
+
+.menu-item:first-child {
+  margin-left: 0;
+}
+
+.menu-item.active,
+.menu-item:hover {
+  border-bottom-color: #0078d7;
+  animation-name: menu-border-fade;
+  animation-duration: .6s;
+  animation-timing-function: ease;
+}
+
+.menu-item.active .menu-link,
+.menu-link:hover {
+  animation-name: menu-link-fade;
+  animation-duration: .4s;
+  animation-timing-function: ease;
+  color: #0078d7;
+}
+
+a.menu-link {
+  color: #000;
+  text-decoration: none;
+}
+
+@keyframes menu-link-fade {
+  from {
+      color: #000;
+  }
+  to {
+      color: #0078d7;
+  }
+}
+
+@keyframes menu-border-fade {
+  from {
+      border-color: #fff;
+  }
+  to {
+      border-color: #0078d7;
+  }
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+  font-weight: 400;
+  padding: 2% 20%;
+  color: #000;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Segoe UI Light', 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+  font-weight: 300;
+  margin: 0 0 15px;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+strong {
+  font-family: 'Segoe UI Bold', 'Segoe UI', Tahoma, Helvetica, Sans-Serif;
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 16px;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+.right {
+  float: right;
+  margin-left: 20px;
+}
+
+.left {
+  float: left;
+  margin-right: 20px;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
